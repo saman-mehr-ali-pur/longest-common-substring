@@ -24,11 +24,7 @@ def LCSuff(DNA1,DNA2):
                     table1[i][j] = table1[i-1][j-1]+1
                     table2[i][j] = 'd'                  #Diagonal arrow ↖   
 
-    for i in table1:
-        print(i)
-    print()
-    for i in table2:
-        print(i)
+
     return find_string(DNA1,DNA2,table1,table2)
 
 
